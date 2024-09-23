@@ -68,7 +68,6 @@ gsap.from("#features .heading-txt", {
     trigger: "#features .heading-txt",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
 gsap.from("#product .heading-txt", {
@@ -80,7 +79,6 @@ gsap.from("#product .heading-txt", {
     scroller: "body",
     start: "top 100%",
     end: "bottom 50%",
-    markers: true,
   },
 });
 gsap.from("#newsletter .heading-txt", {
@@ -92,7 +90,6 @@ gsap.from("#newsletter .heading-txt", {
     scroller: "body",
     start: "top 100%",
     end: "bottom 50%",
-    markers: true,
   },
 });
 gsap.from("#features .boxs", {
@@ -103,7 +100,6 @@ gsap.from("#features .boxs", {
     trigger: "#features .boxs",
     scroller: "body",
     start: "top 100%",
-    markers: true,
   },
 });
 gsap.from("#product .boxs", {
@@ -114,7 +110,7 @@ gsap.from("#product .boxs", {
     trigger: "#product .boxs",
     scroller: "body",
     start: "top 100%",
-    markers: true,
+
   },
 });
 gsap.from("#newsletter .boxs", {
@@ -125,6 +121,6 @@ gsap.from("#newsletter .boxs", {
     trigger: "#newsletter .boxs",
     scroller: "body",
     start: "top 100%",
-    markers: true,
+
   },
 });
