@@ -10,20 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
-  <body class="font-inter">
+  <body class="font-inter overflow-x-hidden">
     <!-- header start -->
 
-    <header>
+    <header id="header">
       <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div
           class="max-w-[1280px] flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <a
             href="https://flowbite.com/"
-            class="flex items-center space-x-3 rtl:space-x-reverse"
+            class="flex items-center space-x-3 rtl:space-x-reverse logo"
           >
             <img
               src="./img/bookverce.png"
@@ -62,7 +64,7 @@
               <li>
                 <a
                   href="#hero"
-                  class="block py-2 px-3 text-white bg-[#529caf] rounded md:bg-transparent md:text-[#529caf] md:p-0 dark:text-white md:dark:text-[#529caf]"
+                  class="block py-2 px-3 text-white bg-[#529caf] rounded md:bg-transparent md:text-[#529caf] md:p-0 dark:text-white md:dark:text-[#529caf] nav1"
                   aria-current="page"
                   >Home</a
                 >
@@ -70,14 +72,14 @@
               <li>
                 <a
                   href="#features"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-[#529caf] md:hover:bg-transparent md:border-0 md:hover:text-[#529caf] md:p-0 dark:text-white md:dark:hover:text-[#529caf] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-[#529caf] md:hover:bg-transparent md:border-0 md:hover:text-[#529caf] md:p-0 dark:text-white md:dark:hover:text-[#529caf] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent nav2"
                   >Features</a
                 >
               </li>
               <li>
                 <a
                   href="#benifits"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-[#529caf] md:hover:bg-transparent md:border-0 md:hover:text-[#529caf] md:p-0 dark:text-white md:dark:hover:text-[#529caf] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-[#529caf] md:hover:bg-transparent md:border-0 md:hover:text-[#529caf] md:p-0 dark:text-white md:dark:hover:text-[#529caf] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent nav3"
                   >Benifits</a
                 >
               </li>
@@ -91,7 +93,10 @@
     <!-- main start -->
     <main>
       <!-- hero start -->
-      <section class="relative py-[40px] md:py-[80px]" id="hero">
+      <section
+        class="relative py-[40px] md:py-[80px] animate-fade-in"
+        id="hero"
+      >
         <div
           class="max-w-[1280px] flex flex-wrap items-center justify-between mx-auto p-4"
         >
@@ -100,18 +105,18 @@
             <!-- content -->
             <div>
               <h1
-                class="max-w-[600px] text-3xl md:text-5xl xl:text-7xl text-[#08080b] font-bold md:leading-[70px]"
+                class="max-w-[600px] text-3xl md:text-5xl xl:text-7xl text-[#08080b] font-bold md:leading-[70px] animate-fade-in-text"
               >
                 Unlock a World of Stories – Join Book Verse
               </h1>
               <p
-                class="max-w-[600px] text-base md:text-xl text-[#08080b] py-5 md:py-8"
+                class="max-w-[600px] text-base md:text-xl text-[#08080b] py-5 md:py-8 animate-fade-in-text"
               >
                 Sign up to get early access to my book and weekly chapter
                 updates.
               </p>
 
-              <form class="flex flex-col md:flex-row gap-4">
+              <form class="flex flex-col md:flex-row gap-4 animate-fade-in-text">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -125,7 +130,7 @@
                 </button>
               </form>
               <ul
-                class="list-none flex justify-center md:justify-start items-center mt-6"
+                class="list-none flex justify-center md:justify-start items-center mt-6 animate-fade-in-text"
               >
                 <li class="inline-block">
                   <img
@@ -175,7 +180,7 @@
               <img src="./img/min-book.webp" alt="" class="w-[75%] mx-auto" />
             </div>
             <div
-              class="md:w-[45%] h-[450px] md:rounded-l-2xl bg-[#9fcfe7] absolute top-1/2 right-0 transform -translate-y-1/2 z-1"
+              class="md:w-[45%] h-[450px] md:rounded-l-2xl bg-[#9fcfe7] absolute top-1/2 right-0 transform -translate-y-1/2 z-1 animate-fade-left"
             ></div>
           </div>
         </div>
@@ -188,13 +193,13 @@
         >
           <div class="w-full mx-auto text-center">
             <!-- Parent container -->
-            <h2 class="text-2xl md:text-3xl xl:text-5xl font-bold">
+            <h2 class="text-2xl md:text-3xl xl:text-5xl font-bold heading-txt">
               What’s unique?
             </h2>
           </div>
           <div class="grid grid-cols-3 gap-5 md:gap-8 pt-10 md:pt-20 mx-auto">
             <div
-              class="col-span-3 md:col-span-1 bg-[#ECF1F5] px-6 py-10 rounded-lg text-center flex justify-center flex-col"
+              class="col-span-3 md:col-span-1 bg-[#ECF1F5] px-6 py-10 rounded-lg text-center flex justify-center flex-col boxs"
             >
               <img
                 src="./img/Storybook.png"
@@ -206,7 +211,7 @@
               </h2>
             </div>
             <div
-              class="col-span-3 md:col-span-1 bg-[#ECF1F5] px-6 py-10 rounded-lg text-center flex justify-center flex-col"
+              class="col-span-3 md:col-span-1 bg-[#ECF1F5] px-6 py-10 rounded-lg text-center flex justify-center flex-col boxs"
             >
               <img src="./img/inbox.png" alt="" class="max-w-[64px] mx-auto" />
               <h2 class="text-lg md:text-xl font-medium pt-5">
@@ -214,7 +219,7 @@
               </h2>
             </div>
             <div
-              class="col-span-3 md:col-span-1 bg-[#ECF1F5] px-6 py-10 rounded-lg text-center flex justify-center flex-col"
+              class="col-span-3 md:col-span-1 bg-[#ECF1F5] px-6 py-10 rounded-lg text-center flex justify-center flex-col boxs"
             >
               <img src="./img/Star.png" alt="" class="max-w-[64px] mx-auto" />
               <h2 class="text-lg md:text-xl font-medium pt-5">
@@ -225,15 +230,109 @@
         </div>
       </section>
       <!-- feature end -->
+      <!-- product start -->
+      <section class="relative py-[40px] md:py-[80px]" id="product">
+        <div class="max-w-[1280px] mx-auto p-4">
+          <h2
+            class="text-[#1C1C1E] font-playfair font-bold text-2xl md:text-5xl text-center uppercase heading-txt"
+          >
+            Recommended Books
+          </h2>
+
+          <div class="grid grid-cols-3 gap-8 pt-12 md:pt-20 mx-auto">
+            <div
+              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow boxs"
+            >
+              <img
+                src="./img/book-01.jpg"
+                alt=""
+                class="max-h-[380px] mx-auto pb-5"
+              />
+              <div
+                class="flex justify-between items-center pt-[12px] pb-[24px]"
+              >
+                <h3 class="text-xl font-semibold text-[#1C1C1E] tracking-wide">
+                  Good Energy
+                </h3>
+                <h3
+                  class="text-base font-semibold text-[#1C1C1E] tracking-wide"
+                >
+                  $195
+                </h3>
+              </div>
+              <button
+                class="w-full text-sm md:text-md text-[#ffffff] bg-[#529caf] hover:bg-[#366b79] font-bold px-6 rounded-md uppercase h-[46px] tracking-wide"
+              >
+                read now
+              </button>
+            </div>
+            <div
+              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow boxs"
+            >
+              <img
+                src="./img/book-02.jpg"
+                alt=""
+                class="max-h-[380px] mx-auto pb-5"
+              />
+              <div
+                class="flex justify-between items-center pt-[12px] pb-[24px]"
+              >
+                <h3 class="text-lg font-semibold text-[#1C1C1E] tracking-wide">
+                  48 Laws of Power
+                </h3>
+                <h3
+                  class="text-base font-semibold text-[#1C1C1E] tracking-wide"
+                >
+                  $225
+                </h3>
+              </div>
+              <button
+                class="w-full text-sm md:text-md text-[#ffffff] bg-[#529caf] hover:bg-[#366b79] font-bold px-6 rounded-md uppercase h-[46px] tracking-wide"
+              >
+                read now
+              </button>
+            </div>
+            <div
+              class="w-max-[500px] col-span-3 md:col-span-1 flex flex-col justify-start p-5 rounded-xl shadow boxs"
+            >
+              <img
+                src="./img/book-03.jpg"
+                alt=""
+                class="max-h-[380px] mx-auto pb-5"
+              />
+              <div
+                class="flex justify-between items-center pt-[12px] pb-[24px]"
+              >
+                <h3 class="text-lg font-semibold text-[#1C1C1E] tracking-wide">
+                  Dragon's Prophecy
+                </h3>
+                <h3
+                  class="text-base font-semibold text-[#1C1C1E] tracking-wide"
+                >
+                  $210
+                </h3>
+              </div>
+              <button
+                class="w-full text-sm md:text-md text-[#ffffff] bg-[#529caf] hover:bg-[#366b79] font-bold px-6 rounded-md uppercase h-[46px] tracking-wide"
+              >
+                read now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product end -->
       <!-- newslatter start -->
       <section class="py-[40px] md:py-[60px]" id="newsletter">
         <div
           class="max-w-[1280px] flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <div class="w-full mx-auto text-center">
+          <div class="w-full mx-auto text-center ">
             <!-- Parent container -->
-            <h2 class="text-2xl md:text-3xl font-bold">Newsletter Benefits</h2>
-            <p class="text-base pt-3 md:pt-5">
+            <h2 class="text-2xl md:text-3xl xl:text-5xl font-bold heading-txt">
+              Newsletter Benefits
+            </h2>
+            <p class="text-base pt-3 md:pt-5 heading-txt">
               Stay connected and enjoy exclusive perks by signing up for our
               newsletter! Here’s what you’ll receive:
             </p>
@@ -241,15 +340,15 @@
           <div
             class="max-w-[900px] mx-auto flex flex-col gap-8 md:gap-10 pt-12 md:pt-20"
           >
-            <div class="grid grid-cols-5 gap-5 md:gap-0 mx-auto text-[#08080b]">
-              <div class="col-span-1 flex justify-center">
+            <div class="grid grid-cols-5 gap-5 mx-auto text-[#08080b] boxs">
+              <div class="col-span-1 flex justify-end">
                 <span
                   class="text-xl md:text-2xl font-bold h-10 md:h-12 w-10 md:w-12 bg-[#D3E3EA] rounded-full flex justify-center items-center -mb-6"
                   >1</span
                 >
               </div>
               <div class="col-span-4">
-                <h3 class="text-lg md:text-2xl font-medium">
+                <h3 class="text-lg md:text-2xl font-medium ">
                   Weekly Chapter Updates
                 </h3>
                 <p class="pt-2 md:pt-4">
@@ -258,8 +357,8 @@
                 </p>
               </div>
             </div>
-            <div class="grid grid-cols-5 gap-5 md:gap-0 mx-auto text-[#08080b]">
-              <div class="col-span-1 flex justify-center">
+            <div class="grid grid-cols-5 gap-5 mx-auto text-[#08080b] boxs">
+              <div class="col-span-1 flex justify-end">
                 <span
                   class="text-xl md:text-2xl font-bold h-10 md:h-12 w-10 md:w-12 bg-[#D3E3EA] rounded-full flex justify-center items-center -mb-6"
                   >2</span
@@ -276,8 +375,8 @@
                 </p>
               </div>
             </div>
-            <div class="grid grid-cols-5 gap-5 md:gap-0 mx-auto text-[#08080b]">
-              <div class="col-span-1 flex justify-center">
+            <div class="grid grid-cols-5 gap-5 mx-auto text-[#08080b] boxs">
+              <div class="col-span-1 flex justify-end">
                 <span
                   class="text-xl md:text-2xl font-bold h-10 md:h-12 w-10 md:w-12 bg-[#D3E3EA] rounded-full flex justify-center items-center -mb-6"
                   >3</span
@@ -369,7 +468,10 @@
     <!-- footer end -->
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.js"></script>
     <script type="module" src="./src/main.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
